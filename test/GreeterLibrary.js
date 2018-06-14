@@ -5,7 +5,7 @@ require('../src/index');
 
 describe('Utility library for greeting', () => {
   const greetr = window.G$('John', 'Doe');
-  it.only('Greets our users', () => {
+  it('Greets our users', () => {
     assert.deepEqual(greetr.greet().greeting(), 'Hello John !');
   });
 });
